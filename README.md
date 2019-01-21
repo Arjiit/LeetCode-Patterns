@@ -1,5 +1,5 @@
 # LeetCode-Patterns
-Set of Patterns to solve many questions of similar type on LeetCode
+Set of Patterns to solve many algorithmic questions of similar type on LeetCode
 
 * Two Pointers
   * Meeting Type
