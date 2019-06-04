@@ -8,12 +8,20 @@
  * }
  */
 class Solution {
+    /*
+    Search for either of the two nodes, any time any of the node is found,
+    we return that node to it's parent else null. Anytime, it finds a not null
+    from its left side and a not null from right side, it knows it is LCA
+    and then it returns it's node value to it's parent.
+
+    Time Complexity - O(n)
+    */
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         if (root == null) {
             return null;
         }
         
-        if (root == p || root == q) {
+        if (root == p || root == q) { // kind of base case as we are searching for left/right to become root.
             return root;
         }
         
