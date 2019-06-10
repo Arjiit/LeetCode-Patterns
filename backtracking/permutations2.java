@@ -45,7 +45,8 @@ numbers. (the condition, we put before adding in permutations questions)
 
 			while(i+1 < nums.length && nums[i] == nums[i+1]) { // check for duplicates
 				i++;
-			}
+			} // this will ensure that when recursion comes back to first 1 in [1,1,2], then it 
+			// skips the second 1 and moves on to 2.
 
 		}
 
