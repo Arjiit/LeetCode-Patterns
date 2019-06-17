@@ -4,6 +4,13 @@ class Solution {
     List<String> ans;
 
 
+/*
+    We maintain two Sets - one for noting the LEDs that are open for minutes, another for the LEDs open for hours
+    we keep appending in the respective list based on the current value of iteration which we increase when we
+    backtrack and once the sum of elements in both the sets are equal to number of LEDs that can be ON, we add convert
+    the numbers in both the sets to Time.
+*/
+
         public List<String> readBinaryWatch(int num) {
             ans = new ArrayList<>();
             Set<Integer> hourSet = new HashSet<>();
