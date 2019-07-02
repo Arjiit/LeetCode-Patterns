@@ -2,6 +2,7 @@ class Solution {
     public int majorityElement(int[] nums) {
     /*
         Bayer's moore voting algorithm.
+        http://www.cs.utexas.edu/~moore/best-ideas/mjrty/example.html#step13
     */
         int major = nums[0];
         int count = 1;
