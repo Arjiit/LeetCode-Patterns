@@ -31,7 +31,7 @@ class Solution {
                 StringBuilder tmp = new StringBuilder(strStack.pop());
                 int repeatedTimes = numStack.pop();
                 for (int j=0; j<repeatedTimes; j++) {
-                    tmp.append(sb);
+                    tmp.append(sb); //append to already popped string
                 }
                 sb = tmp;
             } else {
