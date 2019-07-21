@@ -18,7 +18,7 @@ class Solution {
             bigIndex++;
             num = num/1000;
         }
-        return sb.length() == 0 ? "Zero": sb.substring(1).toString();
+        return sb.length() == 0 ? "Zero": sb.substring(1).toString(); // to insert in the beginning.
     }
     
     public String parseThreeDigit(int num){
