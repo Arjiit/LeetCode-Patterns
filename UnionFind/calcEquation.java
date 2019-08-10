@@ -2,7 +2,8 @@ class Solution {
     /*
     Using union find, we want to first connect all nodes through the equation relation.
     Compress all relations to a common variable. (find and union method)
-    
+    Building process O(nlogn), after that, every time, we query a equation, takes O(logn) .  For this issue: O(n*logn + q*logn)
+
     */
     public double[] calcEquation(List<List<String>> equations, double[] values, List<List<String>> queries) {
         UF uf = new UF();
