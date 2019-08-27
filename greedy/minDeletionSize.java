@@ -6,6 +6,11 @@ class Solution {
     so we mark it as true and in next column iteration (j), it doesn't check
     for those i's.
     O(M*N) solution
+    ["ca","bb","ac"]
+    We check "ca" first and update it's result in sorted[] array and also maintain
+    a count to check how many deletions we require which can be found by iterating
+    within "ca".
+
     */
         public int minDeletionSize(String[] A) {
         int res = 0, n = A.length, m = A[0].length(), i, j;
