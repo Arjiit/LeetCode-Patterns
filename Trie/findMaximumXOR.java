@@ -17,6 +17,7 @@ class Solution {
         for (int i=0; i<nums.length; i++) {
             int num = nums[i];
             Trie curNode = root;
+            // inserting into Trie
             for (int j=31; j>=0; j--) {
                 int curBit = (num >> j) & 1;
                 if (curNode.children[curBit] == null) {
@@ -30,8 +31,10 @@ class Solution {
         for (int num: nums) {
             Trie curNode = root;
             int sum = 0;
+            // Since we want to maximize the xor. If two numbers have different bits at position 31,
+            // then their xor will be greater than numbers that have similar bits at position 31 but different bits at position 0
             for (int i=31; i>=0; i--) {
-                int curBit = (num >> i)&1;
+                int curBit = (num >> i)&1; // this will give us the bit at the ith position
                 if (curBit == 0) {
                     if (curNode.children[1] != null) {
                         sum = sum + (int)Math.pow(2,i);
@@ -57,7 +60,7 @@ class Solution {
 }
 
 class Trie {
-    Trie[] children;
+    Trie[] children; // children would be of Trie type too
     public Trie() {
         children = new Trie[2];
         
