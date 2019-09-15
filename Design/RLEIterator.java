@@ -42,7 +42,7 @@ class RLEIterator {
         arr = new int[A.length/2];
         count = new long[A.length/2];
         for (int i=0; i<A.length; i+=2) {
-            count[i/2] = A[i] + (i>1? count[i/2 - 1] : 0);
+            count[i/2] = A[i] + (i>1? count[i/2 - 1] : 0); // we are incrementally adding the count in the new array, so as to apply binary search on it.
             arr[i/2] = A[i+1];
         }
     }
