@@ -4,7 +4,6 @@ Space Complexity - O(n)
 T.C. to create - O(nlogn)
 T.C. to update - O(logn)
 T.C. to get prefix sum - O(logn)
-
 */
 
 public class fenwickTree {
@@ -17,7 +16,7 @@ public class fenwickTree {
 	public void updateBinaryIndexedTree(int binaryIndexedTree[], int val, int index) {
 		while (index < binaryIndexedTree.length) {
 			binaryIndexedTree[index] += val; // adding to original value in node
-			index = getIndex(index); // getting next index
+			index = getNext(index); // getting next index
 
 		}
 	}
