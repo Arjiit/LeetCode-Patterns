@@ -63,3 +63,6 @@ class Solution {
         a[j] = temp;
     }
 }
+
+// https://leetcode.com/problems/k-similar-strings/discuss/139872/Java-Backtracking-with-Memorization
+// Another implementation storing the min string tranformations in map (memoization) as we approach towards our goal string.
