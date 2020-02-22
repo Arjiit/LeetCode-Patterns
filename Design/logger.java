@@ -1,5 +1,10 @@
 class Logger {
 
+    /*
+    Stream of messages with timestamps coming in. Each message should be printed if and only if
+    not printed in last 10 seconds.
+    */
+
     /** Initialize your data structure here. */
     HashMap<String, Integer> hm; 
     public Logger() {
