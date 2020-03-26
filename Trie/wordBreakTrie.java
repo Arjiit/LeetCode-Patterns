@@ -14,6 +14,11 @@ class Solution {
 
     Although this problem can be solved using memoization, Tries are particularly useful, let's say if we have
     a very large dictionary and hence we would want to call search multiple times. 
+
+     DP with Trie.
+ Time complexity is O(n + m) * k, where n is the length of the String s, m is the size of the wordDict, 
+ and k is the maximum length of the word in wordDict. The Trie construction takes O(mk) time 
+ and the check of whether s can be broken into the words in wordDict takes O(nk) time.
 */
 
     class TrieNode {
